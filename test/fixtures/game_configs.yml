@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gameConfigID: 1
+  gameID: 1
+  gameConfP1: MyString
+  gameConfP2: MyString
+  gameConfP3: MyString
+  gameConfP4: MyString
+  gameConfP5: MyString
+  gameConfP6: MyString
+  gameConfP7: MyString
+  gameConfP8: MyString
+  gameConfP9: MyString
+  gameConfP10: MyString
+
+two:
+  gameConfigID: 1
+  gameID: 1
+  gameConfP1: MyString
+  gameConfP2: MyString
+  gameConfP3: MyString
+  gameConfP4: MyString
+  gameConfP5: MyString
+  gameConfP6: MyString
+  gameConfP7: MyString
+  gameConfP8: MyString
+  gameConfP9: MyString
+  gameConfP10: MyString

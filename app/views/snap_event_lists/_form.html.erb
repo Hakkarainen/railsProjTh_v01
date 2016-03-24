@@ -1,0 +1,69 @@
+<%= form_for(@snap_event_list) do |f| %>
+  <% if @snap_event_list.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@snap_event_list.errors.count, "error") %> prohibited this snap_event_list from being saved:</h2>
+
+      <ul>
+      <% @snap_event_list.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :snapEventListID %><br>
+    <%= f.number_field :snapEventListID %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEventType %><br>
+    <%= f.text_field :snapEventType %>
+  </div>
+  <div class="field">
+    <%= f.label :eventListTimeStamp %><br>
+    <%= f.text_field :eventListTimeStamp %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent1 %><br>
+    <%= f.number_field :snapEvent1 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent2 %><br>
+    <%= f.number_field :snapEvent2 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent3 %><br>
+    <%= f.number_field :snapEvent3 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent4 %><br>
+    <%= f.number_field :snapEvent4 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent5 %><br>
+    <%= f.number_field :snapEvent5 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent6 %><br>
+    <%= f.number_field :snapEvent6 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent7 %><br>
+    <%= f.number_field :snapEvent7 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent8 %><br>
+    <%= f.number_field :snapEvent8 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent9 %><br>
+    <%= f.text_field :snapEvent9 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapEvent10 %><br>
+    <%= f.text_field :snapEvent10 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

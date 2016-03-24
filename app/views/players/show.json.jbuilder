@@ -1,0 +1,1 @@
+json.extract! @player, :id, :playerID, :sessionID, :nickName, :password, :role, :priviLedges, :firstName, :surName, :lastLogInTime, :gameSubsriptionID, :gameToLogID, :gameEventLogID, :loggingOnOffToggle, :eLogPeriodBeging, :eLogPeriodEnd, :eventLoggingInfo, :created_at, :updated_at

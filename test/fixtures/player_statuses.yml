@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  playerID: 1
+  timeStamp: MyString
+  gameStatus: 1
+  gameConfigID: MyString
+  gameLevel: 1
+  gameScore1: 1
+  gameScore2: 1
+  gameScore3: 1
+  gameScore4: 1
+  gameScore5: 1
+  gameScore6: 1
+  gameScore7: 1
+  gameScore8: 1
+  gameScore9: 1
+  gameScore10: 1
+
+two:
+  playerID: 1
+  timeStamp: MyString
+  gameStatus: 1
+  gameConfigID: MyString
+  gameLevel: 1
+  gameScore1: 1
+  gameScore2: 1
+  gameScore3: 1
+  gameScore4: 1
+  gameScore5: 1
+  gameScore6: 1
+  gameScore7: 1
+  gameScore8: 1
+  gameScore9: 1
+  gameScore10: 1

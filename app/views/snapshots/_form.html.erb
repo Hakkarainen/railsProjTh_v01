@@ -1,0 +1,73 @@
+<%= form_for(@snapshot) do |f| %>
+  <% if @snapshot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@snapshot.errors.count, "error") %> prohibited this snapshot from being saved:</h2>
+
+      <ul>
+      <% @snapshot.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :snapshotID %><br>
+    <%= f.text_field :snapshotID %>
+  </div>
+  <div class="field">
+    <%= f.label :interval %><br>
+    <%= f.number_field :interval %>
+  </div>
+  <div class="field">
+    <%= f.label :firstSnapshot %><br>
+    <%= f.text_field :firstSnapshot %>
+  </div>
+  <div class="field">
+    <%= f.label :lastSnapshot %><br>
+    <%= f.text_field :lastSnapshot %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot1 %><br>
+    <%= f.number_field :snapshot1 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot2 %><br>
+    <%= f.number_field :snapshot2 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot3 %><br>
+    <%= f.number_field :snapshot3 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot4 %><br>
+    <%= f.number_field :snapshot4 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot5 %><br>
+    <%= f.number_field :snapshot5 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot6 %><br>
+    <%= f.number_field :snapshot6 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot7 %><br>
+    <%= f.number_field :snapshot7 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot8 %><br>
+    <%= f.number_field :snapshot8 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot9 %><br>
+    <%= f.number_field :snapshot9 %>
+  </div>
+  <div class="field">
+    <%= f.label :snapshot10 %><br>
+    <%= f.number_field :snapshot10 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

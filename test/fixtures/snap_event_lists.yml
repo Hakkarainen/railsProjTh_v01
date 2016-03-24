@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  snapEventListID: 1
+  snapEventType: MyString
+  eventListTimeStamp: MyString
+  snapEvent1: 1
+  snapEvent2: 1
+  snapEvent3: 1
+  snapEvent4: 1
+  snapEvent5: 1
+  snapEvent6: 1
+  snapEvent7: 1
+  snapEvent8: 1
+  snapEvent9: MyString
+  snapEvent10: MyString
+
+two:
+  snapEventListID: 1
+  snapEventType: MyString
+  eventListTimeStamp: MyString
+  snapEvent1: 1
+  snapEvent2: 1
+  snapEvent3: 1
+  snapEvent4: 1
+  snapEvent5: 1
+  snapEvent6: 1
+  snapEvent7: 1
+  snapEvent8: 1
+  snapEvent9: MyString
+  snapEvent10: MyString

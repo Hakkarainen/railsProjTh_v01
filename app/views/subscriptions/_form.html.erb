@@ -1,0 +1,61 @@
+<%= form_for(@subscription) do |f| %>
+  <% if @subscription.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@subscription.errors.count, "error") %> prohibited this subscription from being saved:</h2>
+
+      <ul>
+      <% @subscription.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subscriptionID %><br>
+    <%= f.number_field :subscriptionID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsr1 %><br>
+    <%= f.number_field :gameSubsr1 %>
+  </div>
+  <div class="field">
+    <%= f.label :subscType %><br>
+    <%= f.text_field :subscType %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsr1 %><br>
+    <%= f.number_field :gameSubsr1 %>
+  </div>
+  <div class="field">
+    <%= f.label :subscType %><br>
+    <%= f.text_field :subscType %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsr1 %><br>
+    <%= f.number_field :gameSubsr1 %>
+  </div>
+  <div class="field">
+    <%= f.label :subscType %><br>
+    <%= f.text_field :subscType %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsr1 %><br>
+    <%= f.number_field :gameSubsr1 %>
+  </div>
+  <div class="field">
+    <%= f.label :subscType %><br>
+    <%= f.text_field :subscType %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsr1 %><br>
+    <%= f.number_field :gameSubsr1 %>
+  </div>
+  <div class="field">
+    <%= f.label :subscType %><br>
+    <%= f.text_field :subscType %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

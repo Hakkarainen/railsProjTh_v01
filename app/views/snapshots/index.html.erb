@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Snapshots</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Snapshotid</th>
+      <th>Interval</th>
+      <th>Firstsnapshot</th>
+      <th>Lastsnapshot</th>
+      <th>Snapshot1</th>
+      <th>Snapshot2</th>
+      <th>Snapshot3</th>
+      <th>Snapshot4</th>
+      <th>Snapshot5</th>
+      <th>Snapshot6</th>
+      <th>Snapshot7</th>
+      <th>Snapshot8</th>
+      <th>Snapshot9</th>
+      <th>Snapshot10</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @snapshots.each do |snapshot| %>
+      <tr>
+        <td><%= snapshot.snapshotID %></td>
+        <td><%= snapshot.interval %></td>
+        <td><%= snapshot.firstSnapshot %></td>
+        <td><%= snapshot.lastSnapshot %></td>
+        <td><%= snapshot.snapshot1 %></td>
+        <td><%= snapshot.snapshot2 %></td>
+        <td><%= snapshot.snapshot3 %></td>
+        <td><%= snapshot.snapshot4 %></td>
+        <td><%= snapshot.snapshot5 %></td>
+        <td><%= snapshot.snapshot6 %></td>
+        <td><%= snapshot.snapshot7 %></td>
+        <td><%= snapshot.snapshot8 %></td>
+        <td><%= snapshot.snapshot9 %></td>
+        <td><%= snapshot.snapshot10 %></td>
+        <td><%= link_to 'Show', snapshot %></td>
+        <td><%= link_to 'Edit', edit_snapshot_path(snapshot) %></td>
+        <td><%= link_to 'Destroy', snapshot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Snapshot', new_snapshot_path %>

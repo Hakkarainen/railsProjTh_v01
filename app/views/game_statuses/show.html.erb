@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gamestatusid:</strong>
+  <%= @game_status.gameStatusID %>
+</p>
+
+<p>
+  <strong>Gameconfigid:</strong>
+  <%= @game_status.gameConfigID %>
+</p>
+
+<p>
+  <strong>Gamelevel:</strong>
+  <%= @game_status.gameLevel %>
+</p>
+
+<p>
+  <strong>Snapshotid:</strong>
+  <%= @game_status.snapshotID %>
+</p>
+
+<%= link_to 'Edit', edit_game_status_path(@game_status) %> |
+<%= link_to 'Back', game_statuses_path %>

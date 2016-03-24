@@ -1,0 +1,1 @@
+json.extract! @subscription, :id, :subscriptionID, :gameSubsr1, :subscType, :gameSubsr1, :subscType, :gameSubsr1, :subscType, :gameSubsr1, :subscType, :gameSubsr1, :subscType, :created_at, :updated_at

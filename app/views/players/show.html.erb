@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Playerid:</strong>
+  <%= @player.playerID %>
+</p>
+
+<p>
+  <strong>Sessionid:</strong>
+  <%= @player.sessionID %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @player.nickName %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @player.password %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @player.role %>
+</p>
+
+<p>
+  <strong>Priviledges:</strong>
+  <%= @player.priviLedges %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @player.firstName %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @player.surName %>
+</p>
+
+<p>
+  <strong>Lastlogintime:</strong>
+  <%= @player.lastLogInTime %>
+</p>
+
+<p>
+  <strong>Gamesubsriptionid:</strong>
+  <%= @player.gameSubsriptionID %>
+</p>
+
+<p>
+  <strong>Gametologid:</strong>
+  <%= @player.gameToLogID %>
+</p>
+
+<p>
+  <strong>Gameeventlogid:</strong>
+  <%= @player.gameEventLogID %>
+</p>
+
+<p>
+  <strong>Loggingonofftoggle:</strong>
+  <%= @player.loggingOnOffToggle %>
+</p>
+
+<p>
+  <strong>Elogperiodbeging:</strong>
+  <%= @player.eLogPeriodBeging %>
+</p>
+
+<p>
+  <strong>Elogperiodend:</strong>
+  <%= @player.eLogPeriodEnd %>
+</p>
+
+<p>
+  <strong>Eventlogginginfo:</strong>
+  <%= @player.eventLoggingInfo %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gameid:</strong>
+  <%= @game.gameID %>
+</p>
+
+<p>
+  <strong>Gamename:</strong>
+  <%= @game.gameName %>
+</p>
+
+<p>
+  <strong>Gameversion:</strong>
+  <%= @game.gameVersion %>
+</p>
+
+<p>
+  <strong>Gamegenre:</strong>
+  <%= @game.gameGenre %>
+</p>
+
+<p>
+  <strong>Gamepublisher:</strong>
+  <%= @game.gamePublisher %>
+</p>
+
+<p>
+  <strong>Gamepublyear:</strong>
+  <%= @game.gamePublYear %>
+</p>
+
+<p>
+  <strong>Pricepoint1:</strong>
+  <%= @game.pricePoint1 %>
+</p>
+
+<p>
+  <strong>Pricepoint2:</strong>
+  <%= @game.pricePoint2 %>
+</p>
+
+<p>
+  <strong>Pricepoint3:</strong>
+  <%= @game.pricePoint3 %>
+</p>
+
+<p>
+  <strong>Pricepoint4:</strong>
+  <%= @game.pricePoint4 %>
+</p>
+
+<p>
+  <strong>Conditionsinfo:</strong>
+  <%= @game.conditionsInfo %>
+</p>
+
+<p>
+  <strong>Playercount:</strong>
+  <%= @game.playerCount %>
+</p>
+
+<p>
+  <strong>Playcount:</strong>
+  <%= @game.playCount %>
+</p>
+
+<p>
+  <strong>Bestresult:</strong>
+  <%= @game.bestResult %>
+</p>
+
+<p>
+  <strong>Secondbestresult:</strong>
+  <%= @game.secondBestResult %>
+</p>
+
+<p>
+  <strong>Thirdbestresult:</strong>
+  <%= @game.thirdBestResult %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

@@ -1,0 +1,81 @@
+<%= form_for(@game) do |f| %>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game.errors.count, "error") %> prohibited this game from being saved:</h2>
+
+      <ul>
+      <% @game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gameID %><br>
+    <%= f.number_field :gameID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameName %><br>
+    <%= f.text_field :gameName %>
+  </div>
+  <div class="field">
+    <%= f.label :gameVersion %><br>
+    <%= f.text_field :gameVersion %>
+  </div>
+  <div class="field">
+    <%= f.label :gameGenre %><br>
+    <%= f.text_field :gameGenre %>
+  </div>
+  <div class="field">
+    <%= f.label :gamePublisher %><br>
+    <%= f.text_field :gamePublisher %>
+  </div>
+  <div class="field">
+    <%= f.label :gamePublYear %><br>
+    <%= f.number_field :gamePublYear %>
+  </div>
+  <div class="field">
+    <%= f.label :pricePoint1 %><br>
+    <%= f.text_field :pricePoint1 %>
+  </div>
+  <div class="field">
+    <%= f.label :pricePoint2 %><br>
+    <%= f.text_field :pricePoint2 %>
+  </div>
+  <div class="field">
+    <%= f.label :pricePoint3 %><br>
+    <%= f.text_field :pricePoint3 %>
+  </div>
+  <div class="field">
+    <%= f.label :pricePoint4 %><br>
+    <%= f.text_field :pricePoint4 %>
+  </div>
+  <div class="field">
+    <%= f.label :conditionsInfo %><br>
+    <%= f.text_field :conditionsInfo %>
+  </div>
+  <div class="field">
+    <%= f.label :playerCount %><br>
+    <%= f.number_field :playerCount %>
+  </div>
+  <div class="field">
+    <%= f.label :playCount %><br>
+    <%= f.number_field :playCount %>
+  </div>
+  <div class="field">
+    <%= f.label :bestResult %><br>
+    <%= f.number_field :bestResult %>
+  </div>
+  <div class="field">
+    <%= f.label :secondBestResult %><br>
+    <%= f.number_field :secondBestResult %>
+  </div>
+  <div class="field">
+    <%= f.label :thirdBestResult %><br>
+    <%= f.number_field :thirdBestResult %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

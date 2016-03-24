@@ -1,0 +1,65 @@
+<%= form_for(@game_config) do |f| %>
+  <% if @game_config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@game_config.errors.count, "error") %> prohibited this game_config from being saved:</h2>
+
+      <ul>
+      <% @game_config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :gameConfigID %><br>
+    <%= f.number_field :gameConfigID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameID %><br>
+    <%= f.number_field :gameID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP1 %><br>
+    <%= f.text_field :gameConfP1 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP2 %><br>
+    <%= f.text_field :gameConfP2 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP3 %><br>
+    <%= f.text_field :gameConfP3 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP4 %><br>
+    <%= f.text_field :gameConfP4 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP5 %><br>
+    <%= f.text_field :gameConfP5 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP6 %><br>
+    <%= f.text_field :gameConfP6 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP7 %><br>
+    <%= f.text_field :gameConfP7 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP8 %><br>
+    <%= f.text_field :gameConfP8 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP9 %><br>
+    <%= f.text_field :gameConfP9 %>
+  </div>
+  <div class="field">
+    <%= f.label :gameConfP10 %><br>
+    <%= f.text_field :gameConfP10 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

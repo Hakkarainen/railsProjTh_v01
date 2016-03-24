@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  snapshotID: MyString
+  interval: 1
+  firstSnapshot: MyString
+  lastSnapshot: MyString
+  snapshot1: 1
+  snapshot2: 1
+  snapshot3: 1
+  snapshot4: 1
+  snapshot5: 1
+  snapshot6: 1
+  snapshot7: 1
+  snapshot8: 1
+  snapshot9: 1
+  snapshot10: 1
+
+two:
+  snapshotID: MyString
+  interval: 1
+  firstSnapshot: MyString
+  lastSnapshot: MyString
+  snapshot1: 1
+  snapshot2: 1
+  snapshot3: 1
+  snapshot4: 1
+  snapshot5: 1
+  snapshot6: 1
+  snapshot7: 1
+  snapshot8: 1
+  snapshot9: 1
+  snapshot10: 1

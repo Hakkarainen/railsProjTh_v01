@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Snap Event Lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Snapeventlistid</th>
+      <th>Snapeventtype</th>
+      <th>Eventlisttimestamp</th>
+      <th>Snapevent1</th>
+      <th>Snapevent2</th>
+      <th>Snapevent3</th>
+      <th>Snapevent4</th>
+      <th>Snapevent5</th>
+      <th>Snapevent6</th>
+      <th>Snapevent7</th>
+      <th>Snapevent8</th>
+      <th>Snapevent9</th>
+      <th>Snapevent10</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @snap_event_lists.each do |snap_event_list| %>
+      <tr>
+        <td><%= snap_event_list.snapEventListID %></td>
+        <td><%= snap_event_list.snapEventType %></td>
+        <td><%= snap_event_list.eventListTimeStamp %></td>
+        <td><%= snap_event_list.snapEvent1 %></td>
+        <td><%= snap_event_list.snapEvent2 %></td>
+        <td><%= snap_event_list.snapEvent3 %></td>
+        <td><%= snap_event_list.snapEvent4 %></td>
+        <td><%= snap_event_list.snapEvent5 %></td>
+        <td><%= snap_event_list.snapEvent6 %></td>
+        <td><%= snap_event_list.snapEvent7 %></td>
+        <td><%= snap_event_list.snapEvent8 %></td>
+        <td><%= snap_event_list.snapEvent9 %></td>
+        <td><%= snap_event_list.snapEvent10 %></td>
+        <td><%= link_to 'Show', snap_event_list %></td>
+        <td><%= link_to 'Edit', edit_snap_event_list_path(snap_event_list) %></td>
+        <td><%= link_to 'Destroy', snap_event_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Snap event list', new_snap_event_list_path %>

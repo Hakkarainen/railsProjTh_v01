@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gameStatusID: 1
+  gameConfigID: MyString
+  gameLevel: 1
+  snapshotID: MyString
+
+two:
+  gameStatusID: 1
+  gameConfigID: MyString
+  gameLevel: 1
+  snapshotID: MyString

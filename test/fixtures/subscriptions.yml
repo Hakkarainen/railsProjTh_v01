@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subscriptionID: 1
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+
+two:
+  subscriptionID: 1
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString
+  gameSubsr1: 1
+  subscType: MyString

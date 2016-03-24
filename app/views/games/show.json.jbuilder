@@ -1,0 +1,1 @@
+json.extract! @game, :id, :gameID, :gameName, :gameVersion, :gameGenre, :gamePublisher, :gamePublYear, :pricePoint1, :pricePoint2, :pricePoint3, :pricePoint4, :conditionsInfo, :playerCount, :playCount, :bestResult, :secondBestResult, :thirdBestResult, :created_at, :updated_at

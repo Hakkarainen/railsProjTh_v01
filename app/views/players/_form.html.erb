@@ -1,0 +1,81 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :playerID %><br>
+    <%= f.number_field :playerID %>
+  </div>
+  <div class="field">
+    <%= f.label :sessionID %><br>
+    <%= f.number_field :sessionID %>
+  </div>
+  <div class="field">
+    <%= f.label :nickName %><br>
+    <%= f.text_field :nickName %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </div>
+  <div class="field">
+    <%= f.label :priviLedges %><br>
+    <%= f.text_field :priviLedges %>
+  </div>
+  <div class="field">
+    <%= f.label :firstName %><br>
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :surName %><br>
+    <%= f.text_field :surName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastLogInTime %><br>
+    <%= f.text_field :lastLogInTime %>
+  </div>
+  <div class="field">
+    <%= f.label :gameSubsriptionID %><br>
+    <%= f.number_field :gameSubsriptionID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameToLogID %><br>
+    <%= f.text_field :gameToLogID %>
+  </div>
+  <div class="field">
+    <%= f.label :gameEventLogID %><br>
+    <%= f.number_field :gameEventLogID %>
+  </div>
+  <div class="field">
+    <%= f.label :loggingOnOffToggle %><br>
+    <%= f.text_field :loggingOnOffToggle %>
+  </div>
+  <div class="field">
+    <%= f.label :eLogPeriodBeging %><br>
+    <%= f.text_field :eLogPeriodBeging %>
+  </div>
+  <div class="field">
+    <%= f.label :eLogPeriodEnd %><br>
+    <%= f.text_field :eLogPeriodEnd %>
+  </div>
+  <div class="field">
+    <%= f.label :eventLoggingInfo %><br>
+    <%= f.text_field :eventLoggingInfo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

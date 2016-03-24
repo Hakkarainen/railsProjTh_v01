@@ -1,0 +1,1 @@
+json.extract! @snap_event_list, :id, :snapEventListID, :snapEventType, :eventListTimeStamp, :snapEvent1, :snapEvent2, :snapEvent3, :snapEvent4, :snapEvent5, :snapEvent6, :snapEvent7, :snapEvent8, :snapEvent9, :snapEvent10, :created_at, :updated_at

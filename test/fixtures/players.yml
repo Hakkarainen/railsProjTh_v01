@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  playerID: 1
+  sessionID: 1
+  nickName: MyString
+  password: MyString
+  role: MyString
+  priviLedges: MyString
+  firstName: MyString
+  surName: MyString
+  lastLogInTime: MyString
+  gameSubsriptionID: 1
+  gameToLogID: MyString
+  gameEventLogID: 1
+  loggingOnOffToggle: MyString
+  eLogPeriodBeging: MyString
+  eLogPeriodEnd: MyString
+  eventLoggingInfo: MyString
+
+two:
+  playerID: 1
+  sessionID: 1
+  nickName: MyString
+  password: MyString
+  role: MyString
+  priviLedges: MyString
+  firstName: MyString
+  surName: MyString
+  lastLogInTime: MyString
+  gameSubsriptionID: 1
+  gameToLogID: MyString
+  gameEventLogID: 1
+  loggingOnOffToggle: MyString
+  eLogPeriodBeging: MyString
+  eLogPeriodEnd: MyString
+  eventLoggingInfo: MyString

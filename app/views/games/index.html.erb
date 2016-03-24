@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gameid</th>
+      <th>Gamename</th>
+      <th>Gameversion</th>
+      <th>Gamegenre</th>
+      <th>Gamepublisher</th>
+      <th>Gamepublyear</th>
+      <th>Pricepoint1</th>
+      <th>Pricepoint2</th>
+      <th>Pricepoint3</th>
+      <th>Pricepoint4</th>
+      <th>Conditionsinfo</th>
+      <th>Playercount</th>
+      <th>Playcount</th>
+      <th>Bestresult</th>
+      <th>Secondbestresult</th>
+      <th>Thirdbestresult</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @games.each do |game| %>
+      <tr>
+        <td><%= game.gameID %></td>
+        <td><%= game.gameName %></td>
+        <td><%= game.gameVersion %></td>
+        <td><%= game.gameGenre %></td>
+        <td><%= game.gamePublisher %></td>
+        <td><%= game.gamePublYear %></td>
+        <td><%= game.pricePoint1 %></td>
+        <td><%= game.pricePoint2 %></td>
+        <td><%= game.pricePoint3 %></td>
+        <td><%= game.pricePoint4 %></td>
+        <td><%= game.conditionsInfo %></td>
+        <td><%= game.playerCount %></td>
+        <td><%= game.playCount %></td>
+        <td><%= game.bestResult %></td>
+        <td><%= game.secondBestResult %></td>
+        <td><%= game.thirdBestResult %></td>
+        <td><%= link_to 'Show', game %></td>
+        <td><%= link_to 'Edit', edit_game_path(game) %></td>
+        <td><%= link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Game', new_game_path %>
